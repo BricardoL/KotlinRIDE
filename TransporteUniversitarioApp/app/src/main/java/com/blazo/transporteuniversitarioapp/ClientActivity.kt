@@ -29,7 +29,7 @@ class ClientActivity : AppCompatActivity() {
         setContentView(R.layout.activity_client)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
-       // val userEmail: TextView = findViewById(R.id.textViewName)
+       // val usersEmail: TextView = findViewById(R.id.textViewName)
 
         //mDatabase = FirebaseDatabase.getInstance().getReference("User").child("Customers").
         //child(FirebaseAuth.getInstance().currentUser!!.uid)
