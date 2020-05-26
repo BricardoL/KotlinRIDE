@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CFCCDD"
+        tools:context=".PreBeginActivity">
+
+        <TextView
+            android:id="@+id/tv_welcome_preb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/app_name_oficcial"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.13999999" />
+
+
+
+        <TextView
+            android:id="@+id/tv_queeres_preb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_dimens"
+            android:layout_marginBottom="@dimen/medium_dimens"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/txt_whatareu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_welcome_preb"
+            app:layout_constraintVertical_bias="0.39" />
+
+        <Button
+            android:id="@+id/btn_clienteprebg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginLeft="84dp"
+            android:layout_marginTop="20dp"
+            android:text="Cliente"
+            android:textColor="@drawable/txtbtn_cliente"
+            android:background="@drawable/btn_cliente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_queeres_preb" />
+
+        <Button
+            android:id="@+id/btn_conductorpreb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="84dp"
+            android:layout_marginRight="84dp"
+            android:text="Conductor"
+            android:textColor="@drawable/txtbtn_conductor"
+            android:background="@drawable/btn_conductor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_queeres_preb" />
+
+
+
+        <TextView
+            android:id="@+id/tv_littleexplanation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_dimens"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/txt_littleexplanation"
+            app:layout_constraintBottom_toTopOf="@+id/tv_queeres_preb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_welcome_preb"
+            app:layout_constraintVertical_bias="0.31" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

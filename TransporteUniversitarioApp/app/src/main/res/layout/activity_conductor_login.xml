@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:id="@+id/textView_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/conductor_txt"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/big_size"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="80dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etl_carnetlogin_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorPrimary"
+        
+        >
+
+
+        <EditText
+            android:id="@+id/et_carne_login_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo institucional"
+            android:inputType="textEmailAddress"
+            
+            android:textColorHint="@color/colorPrimary"
+            
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etl_passlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorPrimary">
+        <EditText
+            android:id="@+id/et_pass_login_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btn_ingresar_login_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_dimens"
+        android:background="@drawable/ingconductor_btn"
+        android:onClick="signin"
+        android:text="@string/txt_ingresar_login"
+
+        android:textColor="@drawable/txt_ingconductor"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/little_dimens"
+        android:onClick="forgotPassword"
+
+        android:text="@string/txtx_olvidarcontra_login"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/little_dimens"
+        android:onClick="register"
+        android:text="¿No tienes cuenta? Regístrate acá"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <ProgressBar
+        android:id="@+id/pb_login_c"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:outlineAmbientShadowColor="@color/colorPrimary"/>
+
+
+</LinearLayout>
