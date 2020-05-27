@@ -1,13 +1,18 @@
 package com.blazo.transporteuniversitarioapp
 
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.View
 import android.widget.*
+import androidx.core.app.ActivityCompat
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import kotlinx.android.synthetic.main.fragment_slideshow.*
+import java.util.jar.Manifest
 
 class LoginActivity : AppCompatActivity() {
 
@@ -16,7 +21,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var progressBar: ProgressBar
     private lateinit var btnregistrar: Button
-
+    private val PHONE_CALL_REQUEST_CODE = 1
 
 
 
@@ -24,15 +29,12 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+
         txtUser = findViewById(R.id.et_carne_login)
         password = findViewById(R.id.et_pass_login)
         progressBar = findViewById(R.id.pb_login)
         auth = FirebaseAuth.getInstance()
         btnregistrar= findViewById(R.id.btn_ingresar_login)
-
-
-
-
 
 
     }
@@ -119,6 +121,32 @@ class LoginActivity : AppCompatActivity() {
             Toast.makeText(this, "No se ha verificado en su correo", Toast.LENGTH_LONG).show()
         }
     }
+    fun hacerLlamada(){
+        val numeroText = 911
+        val intent = Intent(Intent.ACTION_CALL)
+        intent.data = Uri.parse("tel: $numeroText")
+        if (ActivityCompat.checkSelfPermission(this,android.Manifest.permission.CALL_PHONE)== PackageManager.PERMISSION_GRANTED)  {
+            startActivity(intent)
+        }else{
+            ActivityCompat.requestPermissions(this, arrayOf(android.Manifest.permission.CALL_PHONE), PHONE_CALL_REQUEST_CODE)
+        }
+    }
+
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+       if (requestCode == PHONE_CALL_REQUEST_CODE){
+           if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+               hacerLlamada()
+           }else{
+               Toast.makeText(this,"Debes dar el permiso",Toast.LENGTH_LONG).show()
+           }
+       }
+    }
+
+
     /*override fun onStart() {
         super.onStart()
         if(auth.currentUser != null){
