@@ -8,16 +8,20 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.blazo.transporteuniversitarioapp.MapFragment"
-        android:label="MapFragment"
+        android:label="Mapa de cliente"
         tools:layout="@layout/fragment_map">
     </fragment>
 
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.blazo.transporteuniversitarioapp.ui.gallery.GalleryFragment"
-        android:label="MapFragment"
+        android:label="Formas de pago"
         tools:layout="@layout/fragment_gallery"/>
-
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.blazo.transporteuniversitarioapp.ui.slideshow.SlideshowFragment"
+        android:label="Emergencia"
+        tools:layout="@layout/fragment_slideshow"/>
 
 
 </navigation>
