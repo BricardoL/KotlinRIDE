@@ -102,7 +102,7 @@ class MapFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClickListe
         mMap = googleMap
 
         //cambiarEstiloMapa()
-        MarcadoresEstaticos()
+       // MarcadoresEstaticos()
         crearListenres()
         prepararMarcadores()
 
