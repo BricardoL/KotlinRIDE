@@ -10,52 +10,14 @@
         android:name="com.blazo.transporteuniversitarioapp.MapFragment"
         android:label="MapFragment"
         tools:layout="@layout/fragment_map">
-
-<!--        <action-->
-<!--            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"-->
-<!--            app:destination="@id/nav_home_second" />-->
-<!--        <action
-            android:id="@+id/action_nav_home_to_mapsActivity"
-            app:destination="@id/mapsActivity" />-->
-        <action
-            android:id="@+id/action_nav_home_to_nav_map"
-            app:destination="@id/nav_map" />
-        <action
-            android:id="@+id/action_nav_home_to_nav_gallery"
-            app:destination="@id/nav_gallery" />
-        <action
-            android:id="@+id/action_nav_home_to_nav_slideshow"
-            app:destination="@id/nav_slideshow" />
     </fragment>
-<!--    <fragment-->
-<!--        android:id="@+id/nav_home_second"-->
-<!--        android:name="com.example.proyectoterminado.ui.home.HomeSecondFragment"-->
-<!--        android:label="@string/home_second"-->
-<!--        tools:layout="@layout/fragment_home_second">-->
-<!--        <action-->
-<!--            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"-->
-<!--            app:destination="@id/nav_home" />-->
-
-<!--        <argument-->
-<!--            android:name="myArg"-->
-<!--            app:argType="string" />-->
-<!--    </fragment>-->
 
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.blazo.transporteuniversitarioapp.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:label="MapFragment"
+        tools:layout="@layout/fragment_gallery"/>
 
 
-    <activity
-        android:id="@+id/nav_slideshow"
-        android:name="com.blazo.transporteuniversitarioapp.MapFragment"
-        android:label="activity_maaps"
-       />
-    <fragment
-        android:id="@+id/nav_map"
-        android:name="com.blazo.transporteuniversitarioapp.MapFragment"
-        android:label="MapFragment" />
 
 </navigation>

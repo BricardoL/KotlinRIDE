@@ -20,5 +20,6 @@
             android:id="@+id/map"
             android:icon="@drawable/ic_settings_black_24dp"
             android:title="Ajustes" />
+
     </group>
 </menu>
