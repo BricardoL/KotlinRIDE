@@ -43,7 +43,7 @@
         android:layout_height="wrap_content">
         <EditText
             android:id="@+id/et_nombres_register"
-            android:hint="Nombre completo"
+            android:hint="Nombres"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
