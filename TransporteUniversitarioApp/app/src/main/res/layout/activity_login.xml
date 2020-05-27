@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorPrimary"
+    android:background="@color/colorPrimaryDark"
     tools:context=".LoginActivity">
 
 
@@ -78,7 +78,7 @@
 
     <Button
         android:id="@+id/btn_ingresar_login"
-        android:layout_width="match_parent"
+        android:layout_width="250sp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/medium_dimens"
         android:layout_gravity="center"
