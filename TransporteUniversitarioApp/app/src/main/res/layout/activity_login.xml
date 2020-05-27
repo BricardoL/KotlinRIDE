@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
+    android:background="@color/colorPrimary"
     tools:context=".LoginActivity">
 
 
@@ -16,11 +17,18 @@
         android:layout_gravity="center_horizontal"
         android:text="@string/cliente_txt"
         android:textAlignment="center"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="#FFFF"
         android:textSize="@dimen/big_size"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
         />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@mipmap/client" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etl_carnetlogin"
@@ -31,10 +39,14 @@
 
         <EditText
             android:id="@+id/et_carne_login"
-            android:layout_width="match_parent"
+            android:layout_width="300sp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:hint="Correo institucional"
             android:inputType="textEmailAddress"
+            android:backgroundTint="#008577"
+            android:textColor="#FFFF"
+
 
             />
 
@@ -44,13 +56,20 @@
         android:id="@+id/etl_passlogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <EditText
             android:id="@+id/et_pass_login"
-            android:layout_width="match_parent"
+            android:layout_width="300sp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#008577"
             android:hint="Contraseña"
             android:inputType="textPassword"
-            />
+            android:textColor="#FFFF"
+            android:textColorHighlight="@android:color/white"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="@android:color/white"
+            android:textCursorDrawable="@android:color/white" />
 
 
 
@@ -62,21 +81,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/medium_dimens"
-        android:background="@drawable/btn_redondo"
+        android:layout_gravity="center"
         android:onClick="signin"
         android:text="@string/txt_ingresar_login"
-
-        android:textColor="#FFF"
+        android:background="@drawable/btn_redondo"
+        android:textColor="#ffff"
         />
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/little_dimens"
         android:onClick="forgotPassword"
-
+        android:gravity="right"
         android:text="@string/txtx_olvidarcontra_login"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="#FFFf"
         />
 
     <TextView
@@ -84,8 +104,10 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/little_dimens"
         android:onClick="register"
+        android:gravity="right"
+
         android:text="¿No tienes cuenta? Regístrate acá"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="#FFFF"
         />
 
     <ProgressBar
@@ -94,6 +116,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="gone"/>
+
+
 
 
 </LinearLayout>

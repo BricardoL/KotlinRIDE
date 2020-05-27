@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:color="@color/colorPrimary"
+    android:color="#008577"
     tools:ignore="NewApi">
     <item android:drawable="@drawable/big_ripple"/>
 
