@@ -96,7 +96,7 @@
         android:layout_height="wrap_content"
         android:text="@string/txt_registrarse_register"
         android:layout_margin="@dimen/medium_dimens"
-        android:textColor="@drawable/txt_btn_registro"
+        android:textColor="#FFFF"
         android:background="@drawable/btn_redondo"/>
 
     <TextView

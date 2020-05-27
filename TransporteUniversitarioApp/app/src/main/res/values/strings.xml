@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TransporteUniversitarioApp</string>
+    <string name="app_name">RIDE</string>
     <string name="nombre_app">TRANSPORTE UNIVERSITARIO</string>
     <string name="txt_carnet">Carnet:</string>
     <string name="hint_input_carne">Introduzca su número de carnet</string>
