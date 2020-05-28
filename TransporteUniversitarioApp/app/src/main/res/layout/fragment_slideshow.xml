@@ -28,7 +28,7 @@
         android:id="@+id/hacerLlamada"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#163963"
+        android:background="#416388"
         android:padding="20sp"
         android:text="LLamar al 911"
         android:textColor="#FFF"
