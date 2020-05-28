@@ -43,7 +43,7 @@ class ConductorActivity : AppCompatActivity() {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(setOf(
-            R.id.nav_home, R.id.nav_gallery,R.id.nav_map), drawerLayout)
+            R.id.Mapa_conductor, R.id.conductor_billetera,R.id.nav_map,R.id.Conductor_Ajustes), drawerLayout)
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 

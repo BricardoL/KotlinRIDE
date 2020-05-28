@@ -3,53 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation_conductor"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/Mapa_conductor">
 
     <fragment
-        android:id="@+id/nav_home"
+        android:id="@+id/Mapa_conductor"
         android:name="com.blazo.transporteuniversitarioapp.MapFragmentConductor"
-        android:label="MapFragmentConductor"
+        android:label="Mapa del conductor"
         tools:layout="@layout/fragment_map">
-
-<!--        <action-->
-<!--            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"-->
-<!--            app:destination="@id/nav_home_second" />-->
-<!--        <action
-            android:id="@+id/action_nav_home_to_mapsActivity"
-            app:destination="@id/mapsActivity" />-->
-        <action
-            android:id="@+id/action_nav_home_to_nav_map_conductor"
-            app:destination="@id/nav_map_conductor" />
     </fragment>
-<!--    <fragment-->
-<!--        android:id="@+id/nav_home_second"-->
-<!--        android:name="com.example.proyectoterminado.ui.home.HomeSecondFragment"-->
-<!--        android:label="@string/home_second"-->
-<!--        tools:layout="@layout/fragment_home_second">-->
-<!--        <action-->
-<!--            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"-->
-<!--            app:destination="@id/nav_home" />-->
-
-<!--        <argument-->
-<!--            android:name="myArg"-->
-<!--            app:argType="string" />-->
-<!--    </fragment>-->
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/conductor_billetera"
         android:name="com.blazo.transporteuniversitarioapp.ui.gallery.GalleryFragment"
-        android:label="Gallery conductor"
-        tools:layout="@layout/fragment_gallery" />
-
-
-    <activity
-        android:id="@+id/nav_slideshow"
-        android:name="com.blazo.transporteuniversitarioapp.MapFragmentConductor"
-        android:label="activity_maaps"
-       />
+        android:label="Billetera"
+        tools:layout="@layout/fragment_gallery"/>
     <fragment
-        android:id="@+id/nav_map_conductor"
-        android:name="com.blazo.transporteuniversitarioapp.MapFragmentConductor"
-        android:label="MapFragment" />
+        android:id="@+id/Conductor_emergencia"
+        android:name="com.blazo.transporteuniversitarioapp.ui.slideshow.SlideshowFragment"
+        android:label="Emergencia"
+        tools:layout="@layout/fragment_slideshow"/>
+    <fragment
+        android:id="@+id/Conductor_Ajustes"
+        android:name="com.blazo.transporteuniversitarioapp.AjustesFragment"
+        android:label="Ajustes"
+        tools:layout="@layout/fragment_ajustes" />
 
 </navigation>

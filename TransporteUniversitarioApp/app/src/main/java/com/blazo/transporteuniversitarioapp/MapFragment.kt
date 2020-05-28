@@ -83,11 +83,7 @@ class MapFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClickListe
                     mMap.isMyLocationEnabled = true
                     mMap.uiSettings.isMyLocationButtonEnabled = true
                     for (ubicacion in locationResult?.locations!!) {
-                        Toast.makeText(
-                            this@MapFragment.context,
-                            ubicacion.latitude.toString() + "," + ubicacion.longitude.toString(),
-                            Toast.LENGTH_LONG
-                        ).show()
+
                         miPosicion = LatLng(ubicacion.latitude, ubicacion.longitude)
                         mMap.addMarker(MarkerOptions().position(miPosicion!!).title("Su ubicacion"))
                         mMap.moveCamera(CameraUpdateFactory.newLatLng(miPosicion))
@@ -102,7 +98,7 @@ class MapFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClickListe
         mMap = googleMap
 
         //cambiarEstiloMapa()
-        MarcadoresEstaticos()
+       // MarcadoresEstaticos()
         crearListenres()
         prepararMarcadores()
 
