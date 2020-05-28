@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigation_view">
+    tools:showIn="navigation_view"
+    android:background="#163963">
 
     <group android:checkableBehavior="single">
         <item
@@ -17,7 +18,7 @@
             android:icon="@drawable/ic_error_black_24dp"
             android:title="Emergencia" />
         <item
-            android:id="@+id/map"
+            android:id="@+id/nav_ajustes"
             android:icon="@drawable/ic_settings_black_24dp"
             android:title="Ajustes" />
 

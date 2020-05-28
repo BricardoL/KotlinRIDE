@@ -1,5 +1,8 @@
 package com.blazo.transporteuniversitarioapp
 
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
 import android.widget.TextView
@@ -15,8 +18,10 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.core.app.ActivityCompat
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
+import kotlinx.android.synthetic.main.fragment_slideshow.*
 
 class ClientActivity : AppCompatActivity() {
 
@@ -46,7 +51,7 @@ class ClientActivity : AppCompatActivity() {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(setOf(
-                R.id.nav_home, R.id.nav_gallery,R.id.nav_map), drawerLayout)
+                R.id.nav_home, R.id.nav_gallery,R.id.nav_map,R.id.nav_ajustes), drawerLayout)
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
@@ -62,6 +67,7 @@ class ClientActivity : AppCompatActivity() {
             }
 
         })*/
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -74,5 +80,7 @@ class ClientActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
+
 
 }
