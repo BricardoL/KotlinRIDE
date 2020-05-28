@@ -5,22 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
     tools:context=".ForgotPassActivity">
 
 
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="30dp"
+        app:srcCompat="@drawable/ic_password" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etl_emailforgotpass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="230dp">
+        >
+
 
         <EditText
             android:id="@+id/et_email_forgotpass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-
+            android:textColor="#ffff"
+            android:layout_margin="20sp"
+            android:backgroundTint="#008577"
             android:hint="Escribe tu correo para restablecer contraseña"
             android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -40,4 +51,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="gone"/>
+=
 </LinearLayout>

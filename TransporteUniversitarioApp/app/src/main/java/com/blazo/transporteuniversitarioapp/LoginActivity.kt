@@ -21,7 +21,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var progressBar: ProgressBar
     private lateinit var btnregistrar: Button
-    private val PHONE_CALL_REQUEST_CODE = 1
+
 
 
 
@@ -121,30 +121,7 @@ class LoginActivity : AppCompatActivity() {
             Toast.makeText(this, "No se ha verificado en su correo", Toast.LENGTH_LONG).show()
         }
     }
-    fun hacerLlamada(){
-        val numeroText = 911
-        val intent = Intent(Intent.ACTION_CALL)
-        intent.data = Uri.parse("tel: $numeroText")
-        if (ActivityCompat.checkSelfPermission(this,android.Manifest.permission.CALL_PHONE)== PackageManager.PERMISSION_GRANTED)  {
-            startActivity(intent)
-        }else{
-            ActivityCompat.requestPermissions(this, arrayOf(android.Manifest.permission.CALL_PHONE), PHONE_CALL_REQUEST_CODE)
-        }
-    }
 
-    override fun onRequestPermissionsResult(
-        requestCode: Int,
-        permissions: Array<out String>,
-        grantResults: IntArray
-    ) {
-       if (requestCode == PHONE_CALL_REQUEST_CODE){
-           if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED){
-               hacerLlamada()
-           }else{
-               Toast.makeText(this,"Debes dar el permiso",Toast.LENGTH_LONG).show()
-           }
-       }
-    }
 
 
     /*override fun onStart() {
