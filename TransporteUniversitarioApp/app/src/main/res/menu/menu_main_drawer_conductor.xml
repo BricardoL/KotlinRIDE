@@ -5,16 +5,24 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_homeconductor"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:id="@+id/Mapa_conductor"
+            android:title="Mapa del conductor"
+            android:icon="@drawable/ic_map_black_24dp"/>
         <item
-            android:id="@+id/nav_galleryconductor"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/conductor_billetera"
+            android:title="Mi billetera"
+            android:icon="@drawable/ic_trending_up_black_24dp"/>
         <item
-            android:id="@+id/nav_mapconductor"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Mapa conductor" />
+            android:id="@+id/Conductor_emergencia"
+            android:icon="@drawable/ic_error_black_24dp"
+            android:title="Emergencia" />
+        <item
+            android:id="@+id/Conductor_ayuda"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:title="Ayuda" />
+        <item
+            android:id="@+id/Conductor_Ajustes"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Ajustes" />
     </group>
 </menu>
