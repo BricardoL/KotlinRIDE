@@ -41,9 +41,10 @@
         <Button
             android:id="@+id/btn_clienteprebg"
             android:layout_width="180dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:background="#D4CFCC"
             android:text="Cliente"
+            android:textSize="20dp"
             android:textColor="@color/colorPrimary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btn_conductorpreb"
@@ -55,9 +56,10 @@
         <Button
             android:id="@+id/btn_conductorpreb"
             android:layout_width="180dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:background="#C6A18E"
             android:text="Conductor"
+            android:textSize="20dp"
             android:textColor="@color/colorPrimary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
