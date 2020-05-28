@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorPrimaryDark"
+    android:background="#416388"
     tools:context=".ForgotPassActivity">
 
 
@@ -21,6 +21,7 @@
         android:id="@+id/etl_emailforgotpass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColorHint="#D4CFCC"
         >
 
 
@@ -31,7 +32,7 @@
             android:ems="10"
             android:textColor="#ffff"
             android:layout_margin="20sp"
-            android:backgroundTint="#008577"
+            android:backgroundTint="#93603D"
             android:hint="Escribe tu correo para restablecer contraseña"
             android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -41,7 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/btn_redondo"
-        android:textColor="@drawable/txt_btn_registro"
+        android:textColor="#D4CFCC"
         android:layout_margin="@dimen/medium_dimens"
         android:text="@string/txt_enviar_fp" />
 
