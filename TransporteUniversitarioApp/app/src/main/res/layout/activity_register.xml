@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/colorPrimaryDark"
+    android:background="#416388"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -26,12 +26,13 @@
         android:layout_width="match_parent"
         android:layout_height="99dp"
         android:layout_marginBottom="10dp"
-        app:srcCompat="@drawable/ic_plus" />
+        app:srcCompat="@drawable/ic_newuser" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etl_carnetregister"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:textColorHint="#D4CFCC">
 
         <EditText
             android:id="@+id/et_register_correo"
@@ -40,8 +41,9 @@
             android:ems="10"
             android:textColor="#ffff"
             android:layout_margin="20sp"
+            android:backgroundTint="#93603D"
             android:hint="Correo institucional UCA"
-            android:backgroundTint="#008577"
+
             android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -49,10 +51,11 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etl_nombresregister"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:textColorHint="#D4CFCC">
         <EditText
             android:id="@+id/et_nombres_register"
-            android:backgroundTint="#008577"
+            android:backgroundTint="#93603D"
             android:hint="Nombre completo"
             android:textColor="#ffff"
             android:layout_margin="20sp"
@@ -63,27 +66,29 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etl_apellidoregister"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:textColorHint="#D4CFCC">
 
         <EditText
             android:id="@+id/et_apellidos_register"
-            android:hint="Apellidos"
-            android:backgroundTint="#008577"
-            android:textColor="#ffff"
-            android:layout_margin="20sp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:backgroundTint="#93603D"
+            android:hint="Apellidos"
+            android:textColor="#ffff" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etl_cumpleregister"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:textColorHint="#D4CFCC">
 
         <EditText
             android:id="@+id/et_fecha_cumple_register"
             android:layout_width="match_parent"
-            android:backgroundTint="#008577"
+            android:backgroundTint="#93603D"
             android:textColor="#ffff"
             android:layout_margin="20sp"
             android:layout_height="wrap_content"
@@ -97,7 +102,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etl_passregister"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:textColorHint="#D4CFCC">
 
         <EditText
             android:id="@+id/et_password_register"
@@ -106,7 +112,7 @@
             android:ems="10"
             android:textColor="#ffff"
             android:layout_margin="20sp"
-            android:backgroundTint="#008577"
+            android:backgroundTint="#93603D"
             android:hint="Crea una contraseña"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -115,10 +121,12 @@
         android:onClick="registerAct"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/txt_registrarse_register"
+        android:textColor="#D4CFCC"
+        android:background="@drawable/btn_redondo"
         android:layout_margin="@dimen/medium_dimens"
-        android:textColor="#FFFF"
-        android:background="@drawable/btn_redondo"/>
+        android:text="@string/txt_registrarse_register"
+
+       />
 
     <TextView
         android:id="@+id/textView2"

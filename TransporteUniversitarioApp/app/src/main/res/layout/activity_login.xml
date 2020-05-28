@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorPrimaryDark"
+    android:background="#416388"
     tools:context=".LoginActivity">
 
 
@@ -34,6 +34,7 @@
         android:id="@+id/etl_carnetlogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColorHint="#D4CFCC"
         >
 
 
@@ -44,7 +45,7 @@
             android:layout_gravity="center"
             android:hint="Correo institucional"
             android:inputType="textEmailAddress"
-            android:backgroundTint="#008577"
+            android:backgroundTint="#93603D"
             android:textColor="#FFFF"
 
 
@@ -55,14 +56,15 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etl_passlogin"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:textColorHint="#D4CFCC">
 
         <EditText
             android:id="@+id/et_pass_login"
             android:layout_width="300sp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:backgroundTint="#008577"
+            android:backgroundTint="#93603D"
             android:hint="Contraseña"
             android:inputType="textPassword"
             android:textColor="#FFFF"
