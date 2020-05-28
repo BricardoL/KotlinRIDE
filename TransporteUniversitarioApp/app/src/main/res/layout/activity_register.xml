@@ -2,25 +2,31 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
+    android:background="@color/colorPrimaryDark"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".RegisterActivity">
 
+
     <TextView
         android:id="@+id/nombre_app_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="50dp"
-        android:textSize="@dimen/big_size"
-        android:textAlignment="center"
         android:layout_gravity="center_horizontal"
-        android:text="@string/app_name_oficcial" />
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/app_name_oficcial"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        android:textSize="@dimen/big_size" />
 
-
-
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/ic_plus" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etl_carnetregister"
@@ -32,7 +38,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:textColor="#ffff"
+            android:layout_margin="20sp"
             android:hint="Correo institucional UCA"
+            android:backgroundTint="#008577"
             android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -43,7 +52,10 @@
         android:layout_height="wrap_content">
         <EditText
             android:id="@+id/et_nombres_register"
+            android:backgroundTint="#008577"
             android:hint="Nombre completo"
+            android:textColor="#ffff"
+            android:layout_margin="20sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -56,6 +68,9 @@
         <EditText
             android:id="@+id/et_apellidos_register"
             android:hint="Apellidos"
+            android:backgroundTint="#008577"
+            android:textColor="#ffff"
+            android:layout_margin="20sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </com.google.android.material.textfield.TextInputLayout>
@@ -68,6 +83,9 @@
         <EditText
             android:id="@+id/et_fecha_cumple_register"
             android:layout_width="match_parent"
+            android:backgroundTint="#008577"
+            android:textColor="#ffff"
+            android:layout_margin="20sp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Fecha de nacimiento"
@@ -86,6 +104,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:textColor="#ffff"
+            android:layout_margin="20sp"
+            android:backgroundTint="#008577"
             android:hint="Crea una contraseña"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -103,7 +124,7 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#263970"
+        android:textColor="#FFFF"
         android:textAlignment="center"
         android:text="Al registrarte se te enviará un correo de autenticación, acéptalo para poder iniciar sesión"
         android:gravity="center_horizontal" />
@@ -116,6 +137,7 @@
         android:indeterminate="true"
         android:visibility="gone"
         />
+
 
 
 </LinearLayout>

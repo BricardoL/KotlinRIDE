@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="116dp"
         android:layout_marginTop="10dp"
-        app:srcCompat="@mipmap/client" />
+        app:srcCompat="@drawable/ic_user" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etl_carnetlogin"

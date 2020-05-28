@@ -5,7 +5,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#CFCCDD"
+        android:background="@color/colorPrimaryDark"
         tools:context=".PreBeginActivity">
 
         <TextView
@@ -15,6 +15,7 @@
             android:fontFamily="sans-serif-condensed"
             android:text="@string/app_name_oficcial"
             android:textSize="26sp"
+            android:textColor="#FFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -26,6 +27,7 @@
             android:id="@+id/tv_queeres_preb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#ffff"
             android:layout_marginTop="@dimen/medium_dimens"
             android:layout_marginBottom="@dimen/medium_dimens"
             android:fontFamily="sans-serif-condensed"
@@ -34,45 +36,32 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_welcome_preb"
-            app:layout_constraintVertical_bias="0.318" />
+            app:layout_constraintVertical_bias="0.882" />
 
         <Button
             android:id="@+id/btn_clienteprebg"
-            android:layout_width="wrap_content"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="84dp"
-            android:layout_marginLeft="84dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="67dp"
-            android:layout_marginRight="67dp"
-            android:layout_marginBottom="281dp"
-            android:background="@drawable/btn_cliente"
-            android:padding="10dp"
+
             android:text="Cliente"
             android:textColor="@drawable/txtbtn_cliente"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btn_conductorpreb"
-            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintHorizontal_bias="0.098"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_queeres_preb"
+            app:layout_constraintTop_toBottomOf="@+id/tv_littleexplanation"
             app:layout_constraintVertical_bias="1.0" />
 
         <Button
             android:id="@+id/btn_conductorpreb"
-            android:layout_width="wrap_content"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="68dp"
-            android:layout_marginRight="68dp"
-            android:layout_marginBottom="281dp"
-            android:background="@drawable/btn_conductor"
-            android:padding="10dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
             android:text="Conductor"
             android:textColor="@drawable/txtbtn_conductor"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/btn_clienteprebg"
             app:layout_constraintTop_toBottomOf="@+id/tv_queeres_preb"
             app:layout_constraintVertical_bias="1.0" />
 
@@ -81,12 +70,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/medium_dimens"
+            android:textColor="#ffff"
             android:fontFamily="sans-serif-condensed"
             android:text="@string/txt_littleexplanation"
             app:layout_constraintBottom_toTopOf="@+id/tv_queeres_preb"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_welcome_preb"
-            app:layout_constraintVertical_bias="0.31" />
+            app:layout_constraintVertical_bias="0.103" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="163dp"
+            android:layout_height="154dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_queeres_preb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_littleexplanation"
+            app:layout_constraintVertical_bias="0.133"
+            app:srcCompat="@drawable/ic_authentication" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
