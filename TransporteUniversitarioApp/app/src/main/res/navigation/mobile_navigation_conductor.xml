@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation_conductor"
-    app:startDestination="@+id/Mapa_conductor">
+    app:startDestination="@+id/Mapa_conductor"
+    tools:ignore="UnusedNavigation">
 
     <fragment
         android:id="@+id/Mapa_conductor"

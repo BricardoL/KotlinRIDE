@@ -10,7 +10,7 @@
         android:id="@+id/credit_card"
         android:layout_width="85dp"
         android:layout_height="68dp"
-        android:src="@drawable/ic_credit_card_black_24dp"
+        android:src="@drawable/ic_"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.147"
