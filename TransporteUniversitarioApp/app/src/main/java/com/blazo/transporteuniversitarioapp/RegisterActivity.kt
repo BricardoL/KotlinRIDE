@@ -46,7 +46,7 @@ class RegisterActivity : AppCompatActivity() {
     fun registerAct(view:View){
         validate()
         createNewAccount()
-       // valEmail()
+        valEmail()
 
 
     }
