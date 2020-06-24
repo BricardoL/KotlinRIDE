@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#416388</color>
+    <color name="colorPrimaryDark">#525F7C</color>
+    <color name="colorAccent">#A19D9C</color>
+    <color name="colorWhite">#ffff</color>
+    <color name="coloBotonConductor">#C6A18E</color>
+    <color name="ColoBotonCliente">#D4CFCC</color>
+    <color name="BtnGeneral">#93603D</color>
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "110444106775",
+    "firebase_url": "https://proyecto-ride.firebaseio.com",
+    "project_id": "proyecto-ride",
+    "storage_bucket": "proyecto-ride.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110444106775:android:7b3865ef23a7926cc43852",
+        "android_client_info": {
+          "package_name": "com.proyecto.proyectotransporte"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "110444106775-afonduhtihnul8leu4kj1v4hufof3mk4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.proyecto.proyectotransporte",
+            "certificate_hash": "cd54076d67b6e738a37bb40a32c83bc5e281c88c"
+          }
+        },
+        {
+          "client_id": "110444106775-gd76s67s0nduff69jkgjdqufasqedb7b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgWHaLthDZW9mG_xNA3pBnVOBFze4mffE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "110444106775-gd76s67s0nduff69jkgjdqufasqedb7b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
