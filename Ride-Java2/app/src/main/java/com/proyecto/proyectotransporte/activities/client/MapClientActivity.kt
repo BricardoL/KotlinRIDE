@@ -239,7 +239,7 @@ class MapClientActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap = googleMap
         mMap!!.mapType = GoogleMap.MAP_TYPE_NORMAL
         mMap!!.uiSettings.isZoomControlsEnabled = true
-        mMap!!.isMyLocationEnabled = true
+        mMap!!.isMyLocationEnabled = false
         mMap!!.setOnCameraIdleListener(mCameraListener)
         mLocationRequest = LocationRequest()
         mLocationRequest!!.interval = 1000
