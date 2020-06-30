@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "384369758281",
+    "firebase_url": "https://proyectotransporteride.firebaseio.com",
+    "project_id": "proyectotransporteride",
+    "storage_bucket": "proyectotransporteride.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384369758281:android:05b4efc8509dd20d83af98",
+        "android_client_info": {
+          "package_name": "com.ride.proyectomovilesridetransporte"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384369758281-n4bpa4gjt06r9qucdqqdfmq6t7u8l197.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ride.proyectomovilesridetransporte",
+            "certificate_hash": "cd54076d67b6e738a37bb40a32c83bc5e281c88c"
+          }
+        },
+        {
+          "client_id": "384369758281-pnstvi8tr3mhajlqsuma5bpu1e3jo6rc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzJt22VKrnb6yGDcMcnbv3xLGDlNqr5us"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384369758281-pnstvi8tr3mhajlqsuma5bpu1e3jo6rc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
