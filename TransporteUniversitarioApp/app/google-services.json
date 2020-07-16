@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "929490197456",
+    "firebase_url": "https://registeruser-be124.firebaseio.com",
+    "project_id": "registeruser-be124",
+    "storage_bucket": "registeruser-be124.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929490197456:android:81b7dcdac8f50bc07937d5",
+        "android_client_info": {
+          "package_name": "com.blazo.transporteuniversitarioapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929490197456-sr0n64ppf0645frfbs134g8852fuag90.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCF35xUfsbdsYJNa3wdSUAhUWUHvOFFETY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929490197456-sr0n64ppf0645frfbs134g8852fuag90.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

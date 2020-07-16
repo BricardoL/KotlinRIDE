@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_conductor"
+    app:startDestination="@+id/Mapa_conductor"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/Mapa_conductor"
+        android:name="com.blazo.transporteuniversitarioapp.MapFragmentConductor"
+        android:label="Mapa del conductor"
+        tools:layout="@layout/fragment_map">
+    </fragment>
+
+    <fragment
+        android:id="@+id/conductor_billetera"
+        android:name="com.blazo.transporteuniversitarioapp.ui.gallery.GalleryFragment"
+        android:label="Billetera"
+        tools:layout="@layout/fragment_gallery"/>
+    <fragment
+        android:id="@+id/Conductor_emergencia"
+        android:name="com.blazo.transporteuniversitarioapp.ui.slideshow.SlideshowFragment"
+        android:label="Emergencia"
+        tools:layout="@layout/fragment_slideshow"/>
+    <fragment
+        android:id="@+id/Conductor_Ajustes"
+        android:name="com.blazo.transporteuniversitarioapp.AjustesFragment"
+        android:label="Ajustes"
+        tools:layout="@layout/fragment_ajustes" />
+
+</navigation>

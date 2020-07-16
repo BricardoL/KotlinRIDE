@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#416388"
+        tools:context=".PreBeginActivity">
+
+        <TextView
+            android:id="@+id/tv_welcome_preb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/app_name_oficcial"
+            android:textSize="26sp"
+            android:textColor="#FFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.13999999" />
+
+
+        <TextView
+            android:id="@+id/tv_queeres_preb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_dimens"
+            android:layout_marginBottom="@dimen/medium_dimens"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/txt_whatareu"
+            android:textColor="#ffff"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.539"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_welcome_preb"
+            app:layout_constraintVertical_bias="0.846" />
+
+        <Button
+            android:id="@+id/btn_clienteprebg"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:background="#D4CFCC"
+            android:text="Cliente"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_conductorpreb"
+            app:layout_constraintHorizontal_bias="0.098"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_littleexplanation"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/btn_conductorpreb"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:background="#C6A18E"
+            android:text="Conductor"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_queeres_preb"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tv_littleexplanation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_dimens"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/txt_littleexplanation"
+            android:textColor="#ffff"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_queeres_preb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_welcome_preb"
+            app:layout_constraintVertical_bias="0.103" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="163dp"
+            android:layout_height="154dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_queeres_preb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_littleexplanation"
+            app:layout_constraintVertical_bias="0.133"
+            app:srcCompat="@drawable/ic_authentication" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
